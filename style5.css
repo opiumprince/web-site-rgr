@@ -1,0 +1,1461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images.png');
+    background-size: 100%;
+}
+
+nav.navbar {
+    height: 75px;
+    padding: 0 100px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+nav .logo img {
+    width: 114px;
+    height: 94px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+nav .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+  }
+.logo {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+nav .logo .text-overlay {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+nav .logo:hover .text-overlay {
+    opacity: 1;
+}
+
+nav .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+nav ul.navbar-nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul.navbar-nav li a {
+    font-size: 18px;
+    text-transform: none;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul.navbar-nav li a:hover {
+    color: lightskyblue;
+    transition: color 0.5s ease;
+}
+
+.content-items img {
+    width: 100%;
+    height: calc(100vh - 75px);
+    object-fit: cover;
+}
+
+nav .logo-description {
+    font-size: 30px;
+    text-transform: none;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.h {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 60px;
+}
+
+.p {
+    text-align: center;
+    color: beige;
+    text-shadow: 3px 3px 3px black;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.z {
+    margin-top: 500px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 60px;
+
+}
+.zxc {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    margin-top: 44px;
+    font-weight: bold;
+}
+
+.box {
+    flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 44px;
+    margin-right: 20px;
+  }
+
+.box img {
+    width: 100%;
+    height: 200px; /* Задайте желаемую высоту для фотографии */
+    object-fit: cover;
+}
+
+.box h3 {
+    margin-top: 10px;
+}
+
+.box p {
+    margin-top: 10px;
+}
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.x{
+    font-size: 18px;
+    font-weight: bold;
+}
+.box {
+    flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 44px;
+    margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+}
+
+.box:last-child {
+    margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+}
+.box:nth-child(4n) {
+    margin-right: 0;
+  }
+
+.scrollable-section {
+    height: 800px; /* Установите желаемую высоту пустого места */
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    color: #333;
+    margin-top: 334px;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-left: 2px
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    } 
+}
+@media screen and (max-width: 576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;m
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 20px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+        margin-top: -84px;
+        margin-left: 60px;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}
+@media screen and (max-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }   
+}
+@media screen and (max-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 15px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 21px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}
+@media screen and (max-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('images.png');
+        background-size: 100%;
+    }
+    
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        margin-left: -42px;
+        margin-top: -5px;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 11px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 40px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 500px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .zxc {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 8px;
+        margin-top: 44px;
+        font-weight: bold;
+    }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 334px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}

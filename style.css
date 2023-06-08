@@ -1,0 +1,1405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('img.png');
+    background-size: 100%;
+}
+
+nav.navbar {
+    height: 75px;
+    padding: 0 100px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+nav .logo img {
+    width: 114px;
+    height: 94px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+nav .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+  }
+.logo {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+nav .logo .text-overlay {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+nav .logo:hover .text-overlay {
+    opacity: 1;
+}
+
+nav .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+nav ul.navbar-nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul.navbar-nav li a {
+    font-size: 18px;
+    text-transform: none;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul.navbar-nav li a:hover {
+    color: lightskyblue;
+    transition: color 0.5s ease;
+}
+
+.content-items img {
+    width: 100%;
+    height: calc(100vh - 75px);
+    object-fit: cover;
+}
+
+nav .logo-description {
+    font-size: 30px;
+    text-transform: none;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.h {
+    margin-top: 400px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 60px;
+}
+
+.p {
+    text-align: center;
+    color: beige;
+    text-shadow: 3px 3px 3px black;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.z {
+    margin-top: 500px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 60px;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.box {
+    flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+    padding: 30px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 44px;
+    margin-right: 20px;
+    height: 400px;
+  }
+
+.box img {
+    width: 100%;
+    height: 200px; /* Задайте желаемую высоту для фотографии */
+    object-fit: cover;
+}
+
+.box h3 {
+    margin-top: 10px;
+}
+
+.box p {
+    margin-top: 10px;
+}
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.x{
+    font-size: 18px;
+    font-weight: bold;
+}
+.box {
+    flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 44px;
+    margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+}
+
+.box:last-child {
+    margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+}
+.box:nth-child(4n) {
+    margin-right: 0;
+  }
+
+.scrollable-section {
+    height: 800px; /* Установите желаемую высоту пустого места */
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    color: #333;
+    margin-top: 44px;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 300%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-top: -2px;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 320px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+    .box {
+        flex-basis: calc(33.3% - 29px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+        height: 440px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    } 
+
+@media screen and (max-width: 1440px) {
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 200%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-top: -10px;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 400px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 1000px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 42px;
+    
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+    .box {
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-left: 40px;
+        height: 380px;
+        width: 260px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    } 
+}
+@media screen and (max-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 150%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 300px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 550px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 30px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+        height: 440px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}
+@media screen and (max-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 170%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 30px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 300px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 35px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .z {
+        margin-top: 460px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 60px;
+    
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 30px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px;
+        height: 450px;
+        width: 170px;
+        margin-left: 15px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}
+@media screen and (max-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 1200%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    .navbar-nav ml-auto {
+        margin-top: 40000px;
+    }
+    
+    nav .logo-description {
+        font-size: 15px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+        margin-top: -80px;
+        margin-left: 60px;
+    }
+    
+    .h {
+        margin-top: 1000px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        margin-left: -50px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: -50px;
+    }
+    .z {
+        margin-top: 1300px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        margin-right: 40px;
+    
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 30px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        height: 390px;
+        width: 170px;
+        margin-left: 60px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }  
+}
+@media screen and (max-width: 320px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('img.png');
+        background-size: 1400%;
+    }
+    nav.navbar {
+        height: 75px;
+        padding: 0 100px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    
+    nav .logo img {
+        width: 114px;
+        height: 94px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+      }
+    .logo {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+    nav .logo .text-overlay {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: transform 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    
+    nav .logo:hover .text-overlay {
+        opacity: 1;
+    }
+    
+    nav .logo p {
+        margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+    
+    nav ul.navbar-nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul.navbar-nav li a {
+        font-size: 18px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul.navbar-nav li a:hover {
+        color: lightskyblue;
+        transition: color 0.5s ease;
+    }
+    
+    .content-items img {
+        width: 100%;
+        height: calc(100vh - 75px);
+        object-fit: cover;
+    }
+    
+    nav .logo-description {
+        font-size: 15px;
+        text-transform: none;
+        padding: 0 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .h {
+        margin-top: 1000px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        margin-left: -50px;
+    }
+    .nav-link {
+        margin-left: -140px;
+    }
+    
+    .p {
+        text-align: center;
+        color: beige;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: -50px;
+    }
+    .z {
+        margin-top: 1300px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        font-size: 14px;
+        margin-right: 40px;
+    
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+    .box {
+        flex-basis: calc(25% - 20px); /* Задайте желаемую ширину флекс-элемента */
+        padding: 30px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        height: 390px;
+        width: 170px;
+        margin-left: 40px;
+      }
+    
+    .box img {
+        width: 100%;
+        height: 200px; /* Задайте желаемую высоту для фотографии */
+        object-fit: cover;
+    }
+    
+    .box h3 {
+        margin-top: 10px;
+    }
+    
+    .box p {
+        margin-top: 10px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .x{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Расчет ширины с учетом пробела между контейнерами */
+        padding: 20px;
+        background-color: #f2f2f2;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 44px;
+        margin-right: 20px; /* Добавлен отступ справа между контейнерами */
+    }
+    
+    .box:last-child {
+        margin-right: 0; /* Убирает отступ справа у последнего контейнера */
+    }
+    .box:nth-child(4n) {
+        margin-right: 0;
+      }
+    
+    .scrollable-section {
+        height: 800px; /* Установите желаемую высоту пустого места */
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        color: #333;
+        margin-top: 44px;
+    }
+    
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    
+    footer p {
+        margin-bottom: 10px;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .footer-bottom {
+        background-color: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    } 
+}
